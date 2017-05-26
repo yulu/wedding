@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+</head>
+<body>
+  <header>
+	<ul>
+	  <li>
+	    <a href="#wedding-day">Wedding Day</a>
+	  </li>
+	  <li>
+	    <a href="#getting-there">Getting There</a>
+	  </li>
+	  <li>
+	    <a href="#will-you-be-there">Will You be There</a>
+	  </li>
+	</ul>
+  </header>
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+
+  {{{ contents }}}
+
+  <footer>
+    <p>Generated using metalsmith by {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
+  </footer>
+
+</body>
+</html>
