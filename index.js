@@ -12,7 +12,7 @@ Metalsmith(__dirname)
     url: "http://littlecheesecake.me/"
   })
   .source('./src')
-  .destination('./doc')
+  .destination('./docs')
   .clean(false)
   .use(youtube({
     width: 560,
