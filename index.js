@@ -2,6 +2,7 @@ var Metalsmith  = require('metalsmith');
 var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
+var youtube		= require('metalsmith-youtube');
 
 Metalsmith(__dirname)
   .metadata({
@@ -11,8 +12,12 @@ Metalsmith(__dirname)
     url: "http://littlecheesecake.me/"
   })
   .source('./src')
-  .destination('./')
+  .destination('./doc')
   .clean(false)
+  .use(youtube({
+    width: 560,
+	height: 315
+  }))
   .use(markdown())
   .use(permalinks())
   .use(layouts({
