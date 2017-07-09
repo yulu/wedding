@@ -3,6 +3,7 @@ var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
 var youtube		= require('metalsmith-youtube');
+var sass        = require('metalsmith-sass');
 
 Metalsmith(__dirname)
   .metadata({
@@ -23,6 +24,9 @@ Metalsmith(__dirname)
   .use(layouts({
     engine: 'handlebars'
   }))
+  .use(sass({
+  	outputDir: 'css/'
+  }))	
   .build(function(err, files) {
     if (err) { throw err; }
   });
