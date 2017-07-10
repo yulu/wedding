@@ -29,13 +29,15 @@
 
   <!-- event description -->
   <div class="description row">
-    <div class="col-md-6 content">
-      <h3>Joyfully invite you to our wedding celebration</h3>
-      <p>September 10th, 2017, 10:30 am - 2:00 pm</p>
-      <p>Canopy Garden, Bishan Park</p>
-    </div>
-    <div class="col-md-6 photo">
-      <img src="/wedding/images/wedding_2.jpg" class="img-circle" alt="us" width="180" height="180"/>
+    <div class="container">
+      <div class="col-md-6 content">
+        <h3>Joyfully invite you to our wedding celebration</h3>
+        <p>September 10th, 2017, 10:30 am - 2:00 pm</p>
+        <p>Canopy Garden, Bishan Park, Singapore</p>
+      </div>
+      <div class="col-md-6 photo">
+        <img src="/wedding/images/wedding_2.jpg" class="img-circle" alt="us" width="180" height="180"/>
+      </div>
     </div>
   </div>
 
@@ -47,16 +49,18 @@
 
   <!-- form -->
   <div class="form-container row">
-    <div class="col-md-5 pet">
-      <img src="/wedding/images/dadiandian.jpg" class="img-circle" alt="us" width="180" height="180"/>
-      <div class="message">
-        We are having the ceremony at a pet-friendly resterant.
-        Your lovely pets are welcomed to the wedding. Please make sure your pets are on leash or in cage.
+    <div class="container">
+      <div class="col-md-5 pet">
+        <img src="/wedding/images/dadiandian.jpg" class="img-circle" alt="us" width="180" height="180"/>
+        <div class="message">
+          We are having the ceremony at a pet-friendly resterant.
+          Your lovely pets are welcomed to the wedding. Please make sure your pets are on leash or in cage.
+        </div>
       </div>
-    </div>
-    <div class="col-md-7 form">
-      <h2>Yes, I'll be there</h2>
-      <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfRx-XjOJQjiSSOSQZElekk42kG8xHRho6UHLVHMVRXq4TboA/viewform?embedded=true#start=embed" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <div class="col-md-7 form">
+        <h2>Yes, I'll be there</h2>
+        <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfRx-XjOJQjiSSOSQZElekk42kG8xHRho6UHLVHMVRXq4TboA/viewform?embedded=true#start=embed" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
     </div>
   </div>
 
@@ -188,8 +192,7 @@
             mapTypeControlOptions: {
               mapTypeIds: ['styled_map']
             },
-            scrollwheel: false,
-            draggable: false
+            scrollwheel: false
           });
           var marker = new google.maps.Marker({
             position: uluru,
